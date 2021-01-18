@@ -1,0 +1,25 @@
+body{
+
+    margin: 0px;
+    background: #eee;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    overflow-x: hidden;
+    
+    .container{
+        max-width: 1200px;
+        display: block;
+        margin:0px auto;
+        width: 90%;
+    }
+
+    .sectionView{
+        margin:30px auto;
+    }
+
+    .notFound{
+        padding: 20px;
+        opacity: 0.5;
+        background: #fff;
+    }
+
+}

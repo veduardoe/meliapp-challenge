@@ -1,0 +1,64 @@
+.card{
+
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    display: inline-flex;
+    width: 100%;
+    cursor:pointer;
+
+    .picture{
+        width: 220px;
+        height:220px;
+        padding: 15px;
+    }
+
+    .detail{
+
+        padding:20px;
+        position: relative;
+        width: 100%;
+
+        .price{
+            font-size: 20px;
+        }
+        
+        .titleProduct{
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .location{
+            position: absolute;
+            opacity: 0.5;
+            right:30px; 
+            top:30px;
+        }
+    }
+
+}
+
+@media(max-width: 720px){
+
+    .card{
+        display: block !important;
+
+        .picture{
+            width: 100% !important;
+            height:initial !important;
+            padding: 0px !important;
+        }
+
+        .location{
+            position: initial !important;
+            display: block;
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        .detail{
+            padding: 0px !important;
+            width: 90% !important;
+            margin:0px auto !important;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@import './../assets/custom-styles/_colors-sizes.scss';
+
+
+.header{
+
+    background: $mainColor;
+
+    .searchBar{
+
+        position: relative;
+
+        .logo{
+            padding: 15px;
+            float:left;
+            cursor: pointer;
+        }
+
+        input{
+            float:right;
+            width: 75%;
+            font-size: 16px;
+            border:0px; 
+            outline: 0px;
+            padding: 10px;
+            margin-top: 12px;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,.2)
+        }
+
+        .clear{
+            clear:both
+        }
+    }
+
+    .searchBtn{
+        
+        background: #fff;
+        border:0px;
+        font-size: 18px;
+        padding: 2px 10px;
+        border-left:1px solid #ddd;
+        position: absolute;
+        right:0px;
+        top:20px;
+        outline:0px;
+        cursor:pointer;
+    }
+}
+
+@media(max-width:720px){
+    .logo{ 
+        float: initial !important;  
+        margin:0px auto;
+        display:block;
+    }
+
+    input{
+        float:initial !important;
+        width: 100% !important;
+        margin-bottom: 15px; 
+        padding:10px 0px !important;
+        text-indent: 10px; 
+    }
+
+    .searchBtn{
+        top:initial !important;
+        bottom:20px !important;
+    }
+}
