@@ -1,8 +1,8 @@
-const express = require('express')
+const express = require('express');
 const app = express();
-const cors = require('cors')
+const cors = require('cors');
 const { getProductSearch, getProductDetail, getProductDescription } = require('./api');
-require('dotenv').config()
+require('dotenv').config();
 
 app.use(cors());
 
